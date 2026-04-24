@@ -6,13 +6,13 @@ import Header from './Header'
 export default function HeroTop() {
   return (
     <div className='bg-primary w-full h-screen'>
-      
-      <div className='bg-repeat w-full h-full' style={{ backgroundImage: `url(${Illustration})` }}>
-        <Container>
-            <Header />
-        </Container>
-      </div>
-
+      <Container>
+        <Header/>
+        <div className='bg-gray-500 w-full flex items-center h-72'>
+          <div className= 'bg-red-500 w-full h-full'></div>
+          <div className= 'bg-green-500 w-full h-full' ></div>
+        </div>
+      </Container>
     </div>
   )
 }
